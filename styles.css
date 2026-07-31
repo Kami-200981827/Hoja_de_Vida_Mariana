@@ -1,0 +1,99 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif; /* Fuente */
+    line-height: 1.6;   /* Espacio entre las líneas */
+    background-color: #f4f4f4; /* Fondo de la página */
+    color: #333; /* Color del texto */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%; /* Ancho del contenedor */
+    max-width: 800px; /* Corregido: se eliminó la palabra 'width' extra */
+    margin: 20px auto;  /* Margen superior e inferior */
+    background: white; /* Fondo blanco para el contenedor */
+    padding: 20px; /* Separa el contenido del borde */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Corregido: sin espacio en rgba() */    
+}
+
+/* Encabezados */
+header {
+    text-align: center; /* Centra el texto */
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+    display: block; /* Asegura que se comporte como bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+h1 {
+    color: #007bff;
+    margin: 10px 0;
+}
+
+/* Secciones */
+.section {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #ddd;
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 1.3em; /* Corregido: sin espacio entre 1.3 y em */
+}
+
+/* Listas */
+ul {
+    padding-left: 20px;
+}
+
+.skills {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills li {
+    background: #3A86FF;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Estilos para el botón de imprimir */
+.print-button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.print-button {
+    background-color: #007bff; /* Color azul original */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.print-button:hover {
+    background-color: #45a049; /* Corregido: azul más oscuro al pasar el cursor */
+}
+
+/* Estilos para impresión */ 
+@media print {
+    .print-button-container {
+        display: none;
+    }
+}
