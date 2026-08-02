@@ -1,36 +1,33 @@
 /* Estilos generales */
-body {
-    font-family: 'Arial', sans-serif; /* Fuente */
-    line-height: 1.6;   /* Espacio entre las líneas */
-    background-color: #f4f4f4; /* Fondo de la página */
-    color: #333; /* Color del texto */
+body{
+    font-family: 'Arial', sans-serif; /*Fuente*/
+    line-height: 1.6;   /* Espacio entre las lineas*/
+    background-color: #f4f4f4; /*Fondo de la pagina*/
+    color: #333; /*Color del texto*/
     margin: 0;
-    padding: 0;
+    padding: 30px 5px;
 }
 
-.container {
-    width: 80%; /* Ancho del contenedor */
-    max-width: 800px; /* Corregido: se eliminó la palabra 'width' extra */
-    margin: 20px auto;  /* Margen superior e inferior */
-    background: white; /* Fondo blanco para el contenedor */
-    padding: 20px; /* Separa el contenido del borde */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Corregido: sin espacio en rgba() */    
+.container{
+    width: 80%; /* ancho del contenedor*/
+    max-width: width 800px; 
+    margin: 20px auto;  /* Margen superior e inferior*/
+    background: white; /*Fondo blanco para en contenedor*/
+    padding: 20px; /* Separa el contenido del borde del contenedor*/
+    box-shadow: 0 0 10px rgba (0,0,0,0.1); /* Sombra alrededor del contenedor*/    
+}
+/* Encabezados*/
+header{
+    text-align: center; /* Centra todo el texto*/
+    margin-bottom:20px;
 }
 
-/* Encabezados */
-header {
-    text-align: center; /* Centra el texto */
-    margin-bottom: 20px;
-}
-
-.profile-pic {
+.profile-pic{
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #007bff;
-    display: block; /* Asegura que se comporte como bloque */
-    margin: 0 auto; /* Centra la imagen horizontalmente */
 }
 
 h1 {
@@ -38,8 +35,8 @@ h1 {
     margin: 10px 0;
 }
 
-/* Secciones */
-.section {
+/* Secciones*/
+.section{
     margin-bottom: 25px;
     padding-bottom: 15px;
     border-bottom: 1px dashed #ddd;
@@ -47,7 +44,7 @@ h1 {
 
 h2 {
     color: #2c3e50;
-    font-size: 1.3em; /* Corregido: sin espacio entre 1.3 y em */
+    font-size: 1.3 em;
 }
 
 /* Listas */
@@ -75,9 +72,8 @@ ul {
     text-align: center;
     margin: 20px 0;
 }
-
 .print-button {
-    background-color: #007bff; /* Color azul original */
+    background-color: #007bff;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -88,12 +84,13 @@ ul {
 }
 
 .print-button:hover {
-    background-color: #45a049; /* Corregido: azul más oscuro al pasar el cursor */
+    background-color: #45a049;
 }
 
-/* Estilos para impresión */ 
+/* Estilos para impresión*/ 
 @media print {
     .print-button-container {
         display: none;
     }
+
 }
