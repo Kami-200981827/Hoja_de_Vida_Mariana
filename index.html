@@ -1,65 +1,84 @@
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
-        <title>Hoja de Vida</title>
-        <link rel="stylesheet" href="styles.css"> <!--Enlaza el archivo a CSS(Styles.css)-->
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Hoja de Vida</title> 
+        <link rel="stylesheet" href="styles.css"> <!--Enlaza el archivo CSS (styles.css) para dar estilos al HTML.-->
+</head>
+<body>  <!--Contiene todo el contenido visible de la página (textos, imágenes, etc.).-->
+    <div class="container">  <!--Un contenedor general para organizar el contenido. La clase container se usa en CSS para dar estilos (como márgenes o anchos).-->
+        <!-- Encabezado con nombre y foto -->
+        <header>  <!--Sección semántica para el encabezado de la página (logo, nombre, título).-->
+            <img src="imagenes/imagen1.jpeg" alt="Mi_foto" class="profile-pic">  
+            <h1>Mariana Giraldo Parra</h1> 
+            <p>Técnica en Programación Web</p>  
+        </header>
 
-    </head>
-    <body>
-        <div class="content"
-            <header>
-                <img src="C:\Talleres\Hoja_de_Vida_Mariana\imagenes\imagen2.jpeg" alt="Mi_foto" class="profile-pic">
-                <h1>Mariana Giraldo Parra</h1>
-                <p>Técnica en programación web</p>
-            </header>
-            <!--Boton para imprimir-->
-            
+        <!-- Botón de imprimir -->
         <div class="print-button-container">
-
-            <button onclick="window.print()" class="pritn-button">🖨️imprimir / Guardar PDF</button>
-
+            <button onclick="window.print()" class="print-button">🖨️ Imprimir / Guardar PDF</button>
         </div>
-            <!--Secciones Principales-->
-            <section class="section">
-                <h2>📌Información Personal</h2>
-                <ul>
-                        <li><strong>Email:</strong>marianagiraldoparra09@gmail.com</li>
-                        <li><strong>Celular:</strong>3145050567</li>
-                        <li><strong>Ubicación:</strong>Chinchiná, Caldas, Colombia</li>
-                </ul>
-            
-            <h2>📚Educación</h2>
-            <div class="Item"></div>
+
+        <!-- Secciones principales -->
+        <section class="section"> 
+            <h2>📌 Información Personal</h2>  
+            <ul>  <!--Crea una lista desordenada (con viñetas). Cada <li> es un ítem de la lista.-->
+                <li><strong>Email:</strong> marianagiraldoparra09@gmail.com</li>
+                <li><strong>Teléfono:</strong> +57 3145050567</li>
+                <li><strong>Ubicación:</strong> Chinchiná, Caldas, Colombia</li>
+            </ul>
+        </section>
+
+        <section class="section">  
+            <h2>🎓 Educación</h2>
+            <div class="item">  <!--Un contenedor para agrupar elementos relacionados-->
                 <h3>Institución Educativa Santa Teresita</h3>
                 <p>Bachiller Tecnico en Programación Web</p>
                 <h3>Sena</h3>
                 <p>Aprendiz Digital-Construcción de contenido digital-Guardianes de la democracia-acces avanzado-Ecxel avanzado</p>
-            <h2>💼Experiencia Laboral</h2>
-            <div class="Item">
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>💼 Experiencia Laboral</h2>
+            <div class="item">
                 <h3>Servicio Social</h3>
-                <p>Acompañamiento a estudiantes con TDAH</p>
-            <h2>⚡Habilidades</h2>
-                <ul class="skills">
-                    <li>HTML/CSS</li>
-                    <Li>JavaScript Básico</Li>
-                </ul>
-            <section>
-            <h2>🤚🏻Declaración</h2>
-                <p class="muted">Hago constar la información aquí
-                consignada es verídica y puede ser comprobada por cualquier persona</p>
-            </section>
+                <p>Acompañamiento a niños con TDAH</p>
+                
+            </div>
+        </section>
 
-            <!--footer / Pie de pagina-->
-            <footer class="footer">
-                <div class="container">
-                    <p>©Copyright Julio 29-2026 MarianaWebIngeniera -All Rights Reserved </p>
-                </div>
-            </footer>
+        <section class="section">
+            <h2>🛠 Habilidades</h2>
+            <ul class="skills">  <!--Lista desordenada con la clase skills para estilos personalizados (ej: mostrar habilidades)-->
+                <li>HTML</li>
+                <li>CSS</li>
+                <Li>JavaScript Básico</Li>
+            </ul>
+        </section>
+    </div>  <!--Cierra el contenedor principal -->
+    
+    <section class="section">  
+            <h2>📃Declaración</h2>
+            <div class="item">  <!--Un contenedor para agrupar elementos relacionados-->
+            <p>Hago constar que la información aquí consignada es verídica y puede ser comprobada por cualquier persona</p>
+            </div>
+        </section>
 
 
+    <!--footer / Pie de pagina-->
+    <footer class="footer">
+        <div class="container">
+            <p>© Copyright - Julio 29-2026 - MariGiraldoWebIngenieria - All Rights Reserved </p>
+        </div>
 
 
-    </body>
+        
+    </footer>
+
+</body>
 </html>
+
+        
+        
